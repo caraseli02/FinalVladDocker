@@ -1,8 +1,95 @@
 {% extends 'layout.html' %}
 
-
 <!-- MAIN BLOCK -->
 {% block main %}
 
+<form action="/" method="post">
+  <section class="gradient">
+    <article class="centrarForm">
+        <div class="field">
+            <select name="mes">
+
+            <option value="1">Enero</option>
+
+            <option value="2">Febrero</option>
+
+            <option value="3">Marzo</option>
+
+            <option value="4">Abril</option>
+
+            <option value="5">Mayo</option>
+
+            <option value="6">Junio</option>
+
+            <option value="7">Julio</option>
+
+            <option value="8">Agosto</option>
+
+            <option value="9">Septiembre</option>
+
+            <option value="10">Octubre</option>
+
+            <option value="11">Noviembre</option>
+
+            <option value="12">Diciembre</option>
+
+        </select>
+        </div>
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <input name="combustible" class="input" type="number" placeholder="Combustible" />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" name="recambios" type="number" placeholder="Gastos Recambios" />
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" name="renting" type="number" placeholder="Gastos Renting" />
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" name="seguro" type="number" placeholder="Gastos Seguro" />
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <button class="button is-success">
+            Calcular y Guardar
+          </button>
+
+        </p>
+      </div>
+    </article>
+  </section>
+</form>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title">
+        Total:
+      </h3>
+
+    </div>
+  </div>
+</section>
 
 {% endblock %}
