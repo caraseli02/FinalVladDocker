@@ -1,0 +1,6 @@
+Flask
+autopep8
+pep8
+pymongo
+dnspython
+pylint

@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    image: finalvlad
+    container_name: finalvlad
+    ports:
+      - "5500:5000"
+    volumes:
+      - ./src:/app

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FinalVlad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')}}">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header-->
+      <header>
+       {% block header %}{% endblock %}
+      <section class="hero is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Gastos Coche
+      </h1>
+    </div>
+  </div>
+</section>
+      </header>
+      
+
+      <!-- MAIN BLOCK -->
+      {% block main %}{% endblock %}
+    </div>
+  </body>
+</html>
