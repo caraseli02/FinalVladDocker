@@ -9,35 +9,35 @@
         <div class="field">
             <select name="mes">
 
-            <option value="1">Enero</option>
+            <option value="Enero">Enero</option>
 
-            <option value="2">Febrero</option>
+            <option value="Febrero">Febrero</option>
 
-            <option value="3">Marzo</option>
+            <option value="Marzo">Marzo</option>
 
-            <option value="4">Abril</option>
+            <option value="Abril">Abril</option>
 
-            <option value="5">Mayo</option>
+            <option value="Mayo">Mayo</option>
 
-            <option value="6">Junio</option>
+            <option value="Junio">Junio</option>
 
-            <option value="7">Julio</option>
+            <option value="Julio">Julio</option>
 
-            <option value="8">Agosto</option>
+            <option value="Agosto">Agosto</option>
 
-            <option value="9">Septiembre</option>
+            <option value="Septiembre">Septiembre</option>
 
-            <option value="10">Octubre</option>
+            <option value="Octubre">Octubre</option>
 
-            <option value="11">Noviembre</option>
+            <option value="Noviembre">Noviembre</option>
 
-            <option value="12">Diciembre</option>
+            <option value="Diciembre">Diciembre</option>
 
         </select>
         </div>
       <div class="field">
         <p class="control has-icons-left has-icons-right">
-          <input name="combustible" class="input" type="number" placeholder="Combustible" />
+          <input  required name="combustible" class="input" type="number" placeholder="Combustible" step="0.01"  pattern="^[0-9]+" />
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
@@ -48,7 +48,7 @@
       </div>
       <div class="field">
         <p class="control has-icons-left">
-          <input class="input" name="recambios" type="number" placeholder="Gastos Recambios" />
+          <input required class="input" name="recambios" type="number" placeholder="Gastos Recambios" step="0.01"  pattern="^[0-9]+" />
           <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
           </span>
@@ -56,7 +56,7 @@
       </div>
       <div class="field">
         <p class="control has-icons-left">
-          <input class="input" name="renting" type="number" placeholder="Gastos Renting" />
+          <input required class="input" name="renting" type="number" placeholder="Gastos Renting" step="0.01"  pattern="^[0-9]+" />
           <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
           </span>
@@ -64,7 +64,7 @@
       </div>
       <div class="field">
         <p class="control has-icons-left">
-          <input class="input" name="seguro" type="number" placeholder="Gastos Seguro" />
+          <input  required class="input" name="seguro" type="number" placeholder="Gastos Seguro" step="0.01"  pattern="^[0-9]+" />
           <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
           </span>
@@ -85,7 +85,7 @@
   <div class="hero-body">
     <div class="container">
       <h3 class="title">
-        Total:
+        Total:{{ total}}
       </h3>
 
     </div>
